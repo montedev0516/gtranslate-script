@@ -221,16 +221,34 @@
         document.querySelectorAll('.video-el').forEach(element => {  
                 element.style.display = 'none';
         });
+        document.querySelectorAll('.element-de').forEach(element => {  
+                element.style.display = 'none';  
+        });
+        document.querySelectorAll('.element-en').forEach(element => {  
+                element.style.display = 'none';
+        });
+        document.querySelectorAll('.element-el').forEach(element => {  
+                element.style.display = 'none';
+        });            
         if(currentLang == 'de') {
             document.querySelectorAll('.video-de').forEach(element => {  
+                element.style.display = 'flex';  
+        });
+            document.querySelectorAll('.element-de').forEach(element => {  
                 element.style.display = 'flex';  
         });
         } else if(currentLang == 'en') {
                document.querySelectorAll('.video-en').forEach(element => {  
                 element.style.display = 'flex';  
         });
+                document.querySelectorAll('.element-en').forEach(element => {  
+                element.style.display = 'flex';  
+        });
         } else if(currentLang == 'el') {
             document.querySelectorAll('.video-el').forEach(element => {  
+                element.style.display = 'flex';
+        });
+            document.querySelectorAll('.element-el').forEach(element => {  
                 element.style.display = 'flex';
         });
     }
